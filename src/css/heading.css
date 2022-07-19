@@ -1,0 +1,60 @@
+.c-head {
+    position: relative;
+    padding-top: 60px;
+}
+
+.c-title {
+    display: inline-block;
+    font-size: 37px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #272727;
+    padding-right: 75px;
+}
+
+.c-title.center {
+    display: block;
+    text-align: center;
+    padding-right: 0;
+}
+
+.c-arrow {
+    border-radius: 50%;
+    border: 2px solid var(--COLOR_PRIMARY);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    font-size: 34px;
+    padding-top: 10px;
+    color: var(--COLOR_PRIMARY);
+    transition: 0.2s;
+    top: 60px;
+    position: absolute;
+    z-index: 500;
+}
+
+.c-forward {
+    padding-left: 2px;
+    right: 15px;
+}
+
+.c-backward {
+    padding-right: 2px;
+    right: 95px;
+}
+
+.c-forward:hover {
+    padding-left: 10px;
+}
+
+.c-backward:hover {
+    padding-right: 10px;
+}
+
+.c-arrow:hover {
+    background-color: #f54a3d;
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+}

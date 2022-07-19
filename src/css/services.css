@@ -1,0 +1,186 @@
+#services {
+    background-color: #f6f6f6;
+    padding-bottom: 10px;
+}
+
+.service-card {
+    /*margin: 15px;*/
+    padding: 22px;
+    border-radius: 24px;
+    width: 230px !important;
+    margin: 60px 10px;
+    background-color: #fff;
+    transition: 0.2s;
+    box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.05), 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+.service-card.active {
+    background: #4285F4;
+    color: #fff;
+}
+
+.service-card:hover {
+    /*box-shadow: 0 4px 8px 0 rgb(0,0,0,0.25), 0 4px 15px 0 rgba(0,0,0,0.25); */
+    box-shadow: 0px 48px 46px -36px rgba(57, 64, 82, 0.5);
+}
+
+.service-card>span {
+    display: inline-block;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    color: #666666;
+    margin-top: 5px;
+}
+
+.service-card>div {
+    display: flex;
+    margin-top: 7px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-btn-group {
+    --width: 80px;
+    --height: 30px;
+    width: var(--width);
+    height: var(--height);
+    position: relative;
+}
+
+.service-card>div button {
+    font-size: 14px;
+    padding: 5px;
+    height: var(--height);
+    text-align: center;
+}
+
+.service-card>div button.add-btn {
+    width: var(--width);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.counter-group {
+    width: var(--width);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    display: flex;
+}
+
+.counter-group>button {
+    width: 22px;
+}
+
+.services-grid {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    --gap: 12px;
+    width: 100%;
+    display: grid;
+    gap: calc(var(--gap) * 2);
+    grid-template-columns: calc(33% - var(--gap)) calc(33% - var(--gap)) calc(33% - var(--gap));
+}
+
+@media screen and (max-width: 780px) {
+    .services-grid {
+        max-width: 600px !important;
+        grid-template-columns: calc(50% - var(--gap)) calc(50% - var(--gap));
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .services-grid {
+        max-width: 380px !important;
+        grid-template-columns: auto;
+    }
+}
+
+.services-grid>.image-container {
+    width: 100%;
+    padding-top: 80%;
+    cursor: pointer;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.07), 0 6px 18px 0 rgba(0, 0, 0, 0.07);
+    background-size: cover;
+    transition: 0.2s;
+    position: relative;
+    overflow: hidden;
+    --overflow-top: 72%;
+    --span-alpha: 0;
+    --heading-top: 20px;
+    --heading-bottom: 40px;
+}
+
+.services-grid>.image-container>.overflow {
+    content: '';
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: var(--overflow-top);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    text-align: center;
+    /* background-color: rgb(255, 255, 255, 0.3); */
+    /* box-shadow: 0 2px 5px rgba(255,101,47,.2); */
+    transition: all .3s ease-out;
+}
+
+.services-grid>.image-container>.overflow>h3 {
+    margin-top: var(--heading-top);
+    margin-bottom: 7px;
+    transition: 0.3s ease-out;
+}
+
+.services-grid>.image-container>.overflow>span {
+    padding: 0 15px;
+    transition: all 0.4s 0.1s;
+    transform: translateY(var(--heading-bottom));
+    opacity: var(--span-alpha);
+}
+
+.services-grid>.image-container:hover {
+    --overflow-top: 25%;
+    --span-alpha: 1;
+    --heading-top: 60px;
+    --heading-bottom: 0px;
+    transform: translateY(-4px);
+    /*box-shadow: 0 4px 8px 0 rgb(0,0,0,0.25), 0 4px 15px 0 rgba(0,0,0,0.25); */
+    box-shadow: 0px 8px 20px 0px rgba(57, 64, 82, 0.3);
+}
+
+.services-grid>.image-container>.blur-overlay {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 855px) {
+
+    .services-grid>.image-container:hover .blur-overlay {
+        backdrop-filter: blur(2px);
+    }
+
+    .services-grid>.image-container {
+        --overflow-top: 25%;
+        --span-alpha: 1;
+        --heading-top: 60px;
+        --heading-bottom: 0px;
+    }
+
+    .services-grid>.image-container:hover {
+        transform: translateY(-4px);
+        box-shadow: 0px 8px 20px 0px rgba(57, 64, 82, 0.3);
+    }
+}

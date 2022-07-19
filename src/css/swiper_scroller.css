@@ -1,0 +1,60 @@
+.sw-con {
+    overflow: hidden;
+    position: relative;
+    max-width: 1800px;
+    margin: auto;
+}
+
+.swiper-wrapper {
+    height: unset;
+}
+
+.lpw, .lwiper-container, .wiper-container {
+    width: 100%;
+    position: unset !important;
+    overflow: visible !important;
+    --button-disolve-color: #f6f6f6;
+    --button-disolve-opacity: 0;
+}
+
+.lpw {
+    --button-disolve-opacity: 1;
+}
+
+
+.swiper-button-next, .swiper-button-prev {
+    opacity: var(--button-disolve-opacity);
+    background-color: #fcf;
+    height: 100%;
+    top: 25px;
+    transition: 0.4s linear;
+    width: 50px;
+    outline: none;
+}
+
+.swiper-button-next {
+    background: linear-gradient(to right, transparent, var(--button-disolve-color));
+    right: 0px;
+}
+
+.swiper-button-prev {
+    background: linear-gradient(to left, transparent, var(--button-disolve-color));
+    left: 0;
+}
+
+.lpw:hover .swiper-button-prev, .lpw:hover .swiper-button-next {
+    --button-disolve-opacity: 1;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    color: #111;
+    font-size: 30px;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    visibility: hidden;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--COLOR_TINT) !important;
+}

@@ -1,0 +1,64 @@
+.about-grid {
+    --gap: 100px;
+    display: grid;
+    grid-template-columns: calc(50% - var(--gap)/2) calc(50% - var(--gap)/2);
+    gap: var(--gap);
+    padding-bottom: 80px;
+    padding-top: 50px;
+}
+
+.about-grid>.image-container>img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.05), 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+.feature-card {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.feature-icon .fa {
+    text-align: center;
+    margin: 5px;
+    width: 65px;
+    height: 65px;
+    font-size: 40px;
+    line-height: 60px;
+    border-radius: 12px;
+    color: var(--COLOR_PRIMARY);
+    /* color: #666666; */
+    box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.05), 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+    border: 2px solid #666666;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: var(--COLOR_TINT);
+}
+
+@media screen and (max-width: 1080px) {
+    .about-grid {
+        --gap: 20px;
+    }
+}
+
+@media screen and (max-width: 818px) {
+
+    .about-grid {
+        grid-template-columns: auto;
+        --gap: 50px;
+    }
+
+    .about-grid>.image-container {
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-grid>.image-container>img {
+        max-width: 400px;
+    }
+}
