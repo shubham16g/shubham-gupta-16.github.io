@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from './components/homepage/Navbar';
 import Header from './components/homepage/Header';
 import About from './components/homepage/About';
@@ -9,12 +9,18 @@ import ContactUs from "./components/homepage/ContactUs";
 
 import Loading from './components/Loading';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 function App() {
-  const name = 'QT-parlour'
+  const name = 'Shubham'
   const [isLoading, setLoading] = useState(false)
 
+  useEffect(() => {
+    Aos.init();
+    Aos.refresh();
+  }, []);
 
   // alert(location.pathname)
 

@@ -11,9 +11,9 @@ export default function About() {
       <div id="about">
           <Heading title='Why Choose Us' isCenter={true}/>
 
-          <div className="page-container small-page about-grid" data-aos="fade">
+          <div className="page-container small-page about-grid" data-aos="fade-up">
               <div className="image-container">
-                  <img src={pic} alt="About"/>
+                  <img src={pic} alt="About" data-aos="zoom-in" />
               </div>
               <div>
                   <FeatureCard title='Experienced Staff' content='Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add.' icon='fa-shield'/>
