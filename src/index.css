@@ -32,7 +32,7 @@ html {
 
 body {
   margin: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -68,7 +68,7 @@ h1.med, h2.med, h3.med, h4.med, h5.med {
 
 p {
   color: #666666;
-  line-height: 18px;
+  line-height: 24px;
 }
 
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {

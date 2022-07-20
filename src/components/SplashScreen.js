@@ -1,13 +1,14 @@
 
 import React, { useState } from 'react'
 import Lottie from 'react-lottie-player'
+import '../css/splash_screen.css'
+
 
 import s1 from '../assets/lottie/s_1.json'
 import s2 from '../assets/lottie/s_2.json'
 import s3 from '../assets/lottie/s_3.json'
 
-export const SplashScreen = ({duration}) => {
-    const [visible, setVisible] = useState(true);
+export const SplashScreen = ({visible}) => {
     const [s2State, setS2State] = useState(false);
     const [s3State, setS3State] = useState(false);
 
@@ -19,31 +20,32 @@ export const SplashScreen = ({duration}) => {
         setS3State(true);
     }, 450);
 
-    setTimeout(() => {
-        setVisible(false);
-    }, duration - 400);
 
-    const style = { width: 250, height: 150, position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }
+
+    const style= {width: 250}
 
     return (
-        <div style={{ background:'#001122', transition:'400ms', opacity: visible ? '1' : '0', position: 'fixed', height: '100vh', width: '100vw', zIndex: 1000 }}>
+        <div className={visible ? 'splash-container' : 'splash-container hidden'}>
             <Lottie
                 loop={false}
+                style={style}
                 animationData={s1}
                 play
-                style={style}
+                className='lottie-splash-logo'
             />
             <Lottie
                 loop={false}
+                style={style}
                 animationData={s2}
                 play={s2State}
-                style={style}
+                className='lottie-splash-logo'
             />
             <Lottie
                 loop={false}
+                style={style}
                 animationData={s3}
                 play={s3State}
-                style={style}
+                className='lottie-splash-logo'
             />
         </div>
     )

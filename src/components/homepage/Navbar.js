@@ -32,11 +32,11 @@ export default function Navbar({ title, onSignInClicked, onLoading }) {
 
     let navItems = navAlwaysCollapsed ? <></> :
         <div id="navbar-menu" className={isMenuOpend ? 'open' : ''}>
-            <a className="header-item link" href="#home">Home</a>
-            <a className="header-item link" href="#about">About</a>
-            <a className="header-item link" href="#services">Services</a>
-            <a className="header-item link" href="#testimonials">Testimonials</a>
-            <a className="header-item link" href="#contact-us">Contact Us</a>
+            <a className="header-item link" data-aos="fade-down" data-aos-delay='10' href="#home">Home</a>
+            <a className="header-item link" data-aos="fade-down" data-aos-delay='50' href="#about">About</a>
+            <a className="header-item link" data-aos="fade-down" data-aos-delay='100' href="#services">Services</a>
+            <a className="header-item link" data-aos="fade-down" data-aos-delay='150' href="#testimonials">Testimonials</a>
+            <a className="header-item link" data-aos="fade-down" data-aos-delay='200' href="#contact-us">Contact Us</a>
         </div>
         
 
@@ -49,7 +49,7 @@ export default function Navbar({ title, onSignInClicked, onLoading }) {
                     
 
                     {/* todo php code here */}
-                    <Link to={navAlwaysCollapsed ? './' : '#home'} id="navbar-logo" className={isCollapsed ? 'collapsed' : ''}>
+                    <Link  to={navAlwaysCollapsed ? './' : '#home'} id="navbar-logo" className={isCollapsed ? 'collapsed' : ''}>
                         
                     </Link>
 
@@ -58,7 +58,7 @@ export default function Navbar({ title, onSignInClicked, onLoading }) {
                 <div className="navbar-section">
                     {navItems}
 
-                    <Link to={'/resume'} target="_blank" onClick={onSignInClicked} className="header-item btn">Resume</Link>
+                    <Link data-aos="fade-down" data-aos-delay='250' to={'/resume'} target="_blank" onClick={onSignInClicked} className="header-item btn">Resume</Link>
                     {navAlwaysCollapsed ? <></> :
                         <div id="menu-btn" onClick={() => {
                             setMenuOpen(!isMenuOpend)

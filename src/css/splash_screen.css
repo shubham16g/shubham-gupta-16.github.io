@@ -1,0 +1,25 @@
+.lottie-splash-logo {
+    position: absolute;
+    top: 50%;
+    filter: invert();
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.splash-container {
+    top: 0;
+    background: rgb(64, 85, 144);
+    background: radial-gradient(circle, rgba(64, 85, 144, 1) 0%, rgba(48, 47, 91, 1) 100%);
+    /* background: url('../images/bg.png'); */
+    transition: 400ms;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    opacity: 1;
+}
+
+.splash-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+}

@@ -15,34 +15,43 @@ import { SplashScreen } from './components/SplashScreen';
 
 
 function App() {
-  const name = 'Shubham'
   const [isLoading, setLoading] = useState(false)
+  const [isVisible, setVisible] = useState(true)
 
   useEffect(() => {
-    Aos.init();
+    Aos.init({
+      offset: 80,
+      duration: 800,
+      once: true
+    });
     Aos.refresh();
   }, []);
 
   // alert(location.pathname)
 
+  setTimeout(() => {
+    setVisible(false);
+  }, 3000);
+
   return (
     <>
-      <SplashScreen duration={3000} />
-      <BrowserRouter>
-        <Navbar title={name} onLoading={setLoading} onSignInClicked={() => { }} />
+      <SplashScreen visible={isVisible} />
+      {isVisible ? <></> : <BrowserRouter>
+        <Navbar onLoading={setLoading} onSignInClicked={() => { }} />
         <Routes>
           <Route exact path='/' element={
             <>
-              <Header title={name} />
-              <About />
-              <Services items={[1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,]} />
-              <Testimonials />
-              <ContactUs />
+              <Header />
+              {/* <About /> */}
+              {/* <Services items={[1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,]} /> */}
+              {/* <Testimonials /> */}
+              {/* <ContactUs /> */}
             </>
           } />
         </Routes>
+        {/* <Footer /> */}
       </BrowserRouter>
-      <Footer />
+      }
       <Loading visible={isLoading} />
     </>
   );

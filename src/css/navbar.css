@@ -43,7 +43,7 @@
     position: relative;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    transition: 0.2s;
+    /* transition: 0.2s; */
 }
 
 #navbar-contents a.header-item.link {
@@ -71,8 +71,8 @@
     transition: 0.4s !important;
     width: 200px;
     height: 90px;
-    background-size: contain;
     transform-origin: top left;
+    background-size: contain;
     background-repeat: no-repeat;
     background-image: url('../assets/s_3.svg');
 }
@@ -383,7 +383,7 @@
         -webkit-text-fill-color: transparent;
         background-size: 200% 100%;
         background-position: 100%;
-        transition: background-position 275ms ease;
+        /* transition: background-position 275ms ease; */
     }
 
     #navbar-contents a.header-item.link:before {
