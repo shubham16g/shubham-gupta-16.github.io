@@ -11,6 +11,7 @@ import Loading from './components/Loading';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { SplashScreen } from './components/SplashScreen';
 
 
 function App() {
@@ -27,20 +28,21 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar title={name} onLoading={setLoading} onSignInClicked={() => { }} />
+        {/* <Navbar title={name} onLoading={setLoading} onSignInClicked={() => { }} /> */}
         <Routes>
           <Route exact path='/' element={
-            <>
-              <Header title={name} />
-              <About />
-              <Services items={[1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,]} />
-              <Testimonials />
-              <ContactUs />
-            </>
+            <SplashScreen/>
+            // <>
+            //   <Header title={name} />
+            //   <About />
+            //   <Services items={[1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,]} />
+            //   <Testimonials />
+            //   <ContactUs />
+            // </>
           } />
         </Routes>
       </BrowserRouter>
-      <Footer />
+      {/* <Footer /> */}
       <Loading visible={isLoading} />
     </>
   );
