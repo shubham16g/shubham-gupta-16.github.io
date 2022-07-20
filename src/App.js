@@ -27,22 +27,22 @@ function App() {
 
   return (
     <>
+      <SplashScreen duration={3000} />
       <BrowserRouter>
-        {/* <Navbar title={name} onLoading={setLoading} onSignInClicked={() => { }} /> */}
+        <Navbar title={name} onLoading={setLoading} onSignInClicked={() => { }} />
         <Routes>
           <Route exact path='/' element={
-            <SplashScreen/>
-            // <>
-            //   <Header title={name} />
-            //   <About />
-            //   <Services items={[1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,]} />
-            //   <Testimonials />
-            //   <ContactUs />
-            // </>
+            <>
+              <Header title={name} />
+              <About />
+              <Services items={[1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,]} />
+              <Testimonials />
+              <ContactUs />
+            </>
           } />
         </Routes>
       </BrowserRouter>
-      {/* <Footer /> */}
+      <Footer />
       <Loading visible={isLoading} />
     </>
   );

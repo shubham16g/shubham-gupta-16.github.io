@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import '../../css/navbar.css'
+// import { ReactComponent as logo } from '../../assets/s_3.svg'
 
 export default function Navbar({ title, onSignInClicked, onLoading }) {
 
@@ -45,22 +46,26 @@ export default function Navbar({ title, onSignInClicked, onLoading }) {
             <div id="navbar-contents" className={isCollapsed ? 'page-container collapsed' : 'page-container'}>
                 <div className="navbar-section">
 
+                    
+
+                    {/* todo php code here */}
+                    <Link to={navAlwaysCollapsed ? './' : '#home'} id="navbar-logo" className={isCollapsed ? 'collapsed' : ''}>
+                        
+                    </Link>
+
+
+                </div>
+                <div className="navbar-section">
+                    {navItems}
+
+                    <Link to={'/resume'} target="_blank" onClick={onSignInClicked} className="header-item btn">Resume</Link>
                     {navAlwaysCollapsed ? <></> :
                         <div id="menu-btn" onClick={() => {
                             setMenuOpen(!isMenuOpend)
                         }} className={isMenuOpend ? 'menu-btn open' : 'menu-btn'}>
                             <div className="menu-btn__burger"></div>
-                        </div>}
-
-                    {/* todo php code here */}
-                    <Link to={navAlwaysCollapsed ? './' : '#home'} id="navbar-logo" className={isCollapsed ? 'collapsed' : ''}>{title}</Link>
-
-                    {navItems}
-
-                </div>
-                <div className="navbar-section">
-                
-                    <a href={'#sign-in'} onClick={onSignInClicked} className="header-item btn" /* onClick={visibleAuthForm} */ >Sign In</a>
+                        </div>
+                    }
                 </div>
             </div>
         </nav>
