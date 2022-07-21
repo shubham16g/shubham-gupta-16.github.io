@@ -26,6 +26,7 @@ export const SplashScreen = ({visible}) => {
 
     return (
         <div className={visible ? 'splash-container' : 'splash-container hidden'}>
+            <header style={{display: 'none'}}></header>
             <Lottie
                 loop={false}
                 style={style}
