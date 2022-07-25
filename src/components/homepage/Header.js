@@ -17,8 +17,8 @@ export default function Header() {
                         <div className="footer-timing social-links">
                             <a href={'./'} className="fb" data-aos="fade-up" data-aos-delay='600'> <i className="fa fa-facebook" aria-hidden="true"></i></a>
                             <a href={'./'} className="yt" data-aos="fade-up" data-aos-delay='650'> <i className="fa fa-youtube-play" aria-hidden="true"></i></a>
-                            <a href={'./'} className="ig" data-aos="fade-up" data-aos-delay='700'> <i className="fa fa-instagram" aria-hidden="true"></i></a>
-                            <a href={'./'} className="tw" data-aos="fade-up" data-aos-delay='750'> <i className="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href={'https://www.instagram.com/shubham_g_16/'} className="ig" data-aos="fade-up" data-aos-delay='700'> <i className="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href={'https://twitter.com/shubham_g16'} className="tw" data-aos="fade-up" data-aos-delay='750'> <i className="fa fa-twitter" aria-hidden="true"></i></a>
                         </div>
                         <br />
                         <br />
