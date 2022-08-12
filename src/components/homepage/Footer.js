@@ -16,10 +16,10 @@ export default function Footer() {
                         </div>
 
                         <div className="footer-timing social-links">
-                            <Link target="_blank" to={'./'} className="fb"> <i className="fa fa-facebook" aria-hidden="true"></i></Link>
-                            <Link target="_blank" to={'./'} className="yt"> <i className="fa fa-youtube-play" aria-hidden="true"></i></Link>
-                            <Link target="_blank" to={'./'} className="ig"> <i className="fa fa-instagram" aria-hidden="true"></i></Link>
-                            <Link target="_blank" to={'./'} className="tw"> <i className="fa fa-twitter" aria-hidden="true"></i></Link>
+                            <a target="_blank" href={'https://stackoverflow.com/users/12078109/shubham-gupta'} className="fb" data-aos="fade-up" data-aos-delay='600'> <i className="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a target="_blank" href={'https://github.com/shubham-gupta-16'} className="yt" data-aos="fade-up" data-aos-delay='650'> <i className="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            <a target="_blank" href={'https://www.instagram.com/shubham_g_16/'} className="ig" data-aos="fade-up" data-aos-delay='700'> <i className="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a target="_blank" href={'https://twitter.com/shubham_g16'} className="tw" data-aos="fade-up" data-aos-delay='750'> <i className="fa fa-twitter" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div></div>
