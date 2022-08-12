@@ -4,21 +4,21 @@ import FeatureCard from './FeatureCard'
 
 
 import '../../css/about.css'
-import pic from "../../images/pic.png";
+import pic from "../../images/bg.png";
 
 export default function About() {
   return (
       <div id="about">
-          <Heading title='Why Choose Us' isCenter={true}/>
+          <Heading title='About Me' isCenter={true}/>
 
           <div className="page-container small-page about-grid" data-aos="fade-up">
               <div className="image-container">
                   <img src={pic} alt="About" data-aos="zoom-in" />
               </div>
               <div>
-                  <FeatureCard title='Experienced Staff' content='Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add.' icon='fa-shield'/>
-                  <FeatureCard title='Pre Booking Online' content='Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add.' icon='fa-check-square-o'/>
-                  <FeatureCard title='Affordable Cost' content='Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add.' icon='fa-inr'/>
+                  <FeatureCard title='Personal Details' content='Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add.' icon='fa-shield'/>
+                  <FeatureCard title='Technical Skills' content='Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add.' icon='fa-check-square-o'/>
+                  <FeatureCard title='Experiance' content='Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add.' icon='fa-inr'/>
 
               </div>
           </div>

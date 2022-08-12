@@ -34,9 +34,9 @@ export default function Navbar({ title, onSignInClicked, onLoading }) {
         <div id="navbar-menu" className={isMenuOpend ? 'open' : ''}>
             <a className="header-item link" data-aos="fade-down" data-aos-delay='10' href="#home">Home</a>
             <a className="header-item link" data-aos="fade-down" data-aos-delay='50' href="#about">About</a>
-            <a className="header-item link" data-aos="fade-down" data-aos-delay='100' href="#services">Services</a>
+            <a className="header-item link" data-aos="fade-down" data-aos-delay='100' href="#services">Skills</a>
             <a className="header-item link" data-aos="fade-down" data-aos-delay='150' href="#testimonials">Testimonials</a>
-            <a className="header-item link" data-aos="fade-down" data-aos-delay='200' href="#contact-us">Contact Us</a>
+            <a className="header-item link" data-aos="fade-down" data-aos-delay='200' href="#footer">Contact Us</a>
         </div>
         
 

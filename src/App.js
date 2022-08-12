@@ -42,14 +42,14 @@ function App() {
           <Route exact path='/' element={
             <>
               <Header />
-              {/* <About /> */}
-              {/* <Services items={[1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,]} /> */}
+              <About />
+              <Services items={[1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,]} />
               {/* <Testimonials /> */}
               {/* <ContactUs /> */}
             </>
           } />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
       }
       <Loading visible={isLoading} />

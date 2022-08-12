@@ -24,7 +24,7 @@ export default function Services({ items }) {
     }
     return (
         <div id="services">
-            <Heading title='Our Popular Services' />
+            <Heading title='My Skills' />
             {/* <?php echo cHeader('Our Popular Services', false, './booking.php', null); ?> */}
 
             <div className="sw-con">
@@ -43,10 +43,10 @@ export default function Services({ items }) {
 
                             {items.map(e => <SwiperSlide className='service-card'>
 
-                                <h4>Pre-Bridal Basic</h4>
-                                <span>{e} Hour</span>
+                                <h4>Android Development</h4>
+                                <span>90 %</span>
                                 <div>
-                                    <h5>Rs.400</h5>
+                                    <h5>46 Projects</h5>
                                     {/* <div className="add-btn-group" sid_btn="${category.sid}">
                                   <div className="counter-group">
                                       <button sid="${category.sid}" className="b-btn hard inverse minus-btn">-</button>
@@ -64,9 +64,9 @@ export default function Services({ items }) {
                 </Swiper>
             </div>
 
-            <Heading title='We Provide the Best' isCenter={true} />
+            {/* <Heading title='We Provide the Best' isCenter={true} /> */}
             {/* <?php cHeader('We Provide the Best', true, null, null); ?> */}
-            <div className="page-container small-page services-grid" data-aos="fade">
+            {/* <div className="page-container small-page services-grid" data-aos="fade">
                 {ServiceCard({ image: '../images/pic.png', title: 'Facial', content: 'Lorem ipsum dolor sit amet consectetur adipisicing.' })}
                 {ServiceCard({ image: '../images/pic.png', title: 'Facial', content: 'Lorem ipsum dolor sit amet consectetur adipisicing.' })}
                 {ServiceCard({ image: '../images/pic.png', title: 'Facial', content: 'Lorem ipsum dolor sit amet consectetur adipisicing.' })}
@@ -74,7 +74,7 @@ export default function Services({ items }) {
                 {ServiceCard({ image: '../images/pic.png', title: 'Facial', content: 'Lorem ipsum dolor sit amet consectetur adipisicing.' })}
                 {ServiceCard({ image: '../images/pic.png', title: 'Facial', content: 'Lorem ipsum dolor sit amet consectetur adipisicing.' })}
 
-            </div>
+            </div> */}
         </div>
     )
 }

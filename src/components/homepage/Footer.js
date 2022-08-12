@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../../css/footer.css'
 
 export default function Footer() {
@@ -8,22 +9,21 @@ export default function Footer() {
             <div className="page-container">
                 <div className="footer-grid">
                     <div>
-                        <h2 className="footer-grid-title">celebrino</h2>
+                        <h2 className="footer-grid-title">Shubham Gupta</h2>
 
                         <div className="footer-timing">
                             <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                         </div>
 
                         <div className="footer-timing social-links">
-                            <a href={'./'} className="fb"> <i className="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href={'./'} className="yt"> <i className="fa fa-youtube-play" aria-hidden="true"></i></a>
-                            <a href={'./'} className="ig"> <i className="fa fa-instagram" aria-hidden="true"></i></a>
-                            <a href={'./'} className="tw"> <i className="fa fa-twitter" aria-hidden="true"></i></a>
+                            <Link target="_blank" to={'./'} className="fb"> <i className="fa fa-facebook" aria-hidden="true"></i></Link>
+                            <Link target="_blank" to={'./'} className="yt"> <i className="fa fa-youtube-play" aria-hidden="true"></i></Link>
+                            <Link target="_blank" to={'./'} className="ig"> <i className="fa fa-instagram" aria-hidden="true"></i></Link>
+                            <Link target="_blank" to={'./'} className="tw"> <i className="fa fa-twitter" aria-hidden="true"></i></Link>
                         </div>
-
                     </div>
                     <div></div>
-                    <div>
+                    {/* <div>
                         <h2 className="footer-grid-title">Opening Hours</h2>
 
                         <div className="footer-timing">
@@ -36,27 +36,27 @@ export default function Footer() {
                             <h4>8AM - 10AM</h4>
                         </div>
 
-                    </div>
+                    </div> */}
 
                     <div>
                         <h2 className="footer-grid-title">Get in Touch</h2>
 
                         <div className="footer-timing">
-                            <span>Ashirwad Complex, Kerakatpur Lohta,</span>
+                            <span>Naibasti, Madhiya, Parao,</span>
                             <span>Varanasi, Uttar Pradesh, India</span>
                         </div>
 
                         <div className="footer-timing">
-                            <span>celebrino@gmail.com</span>
+                            <span>shubham.developer16@gmail.com</span>
                         </div>
 
                         <div className="footer-timing">
-                            <span>+91 98981 23456</span>
+                            <span>+91 8318-58-6081</span>
                         </div>
                     </div>
                 </div>
                 <div className="credits">
-                    <p>© 2021 Celebrino. All rights reserved.</p>
+                    <p>© Website developed by - Shubham Gupta</p>
                 </div>
             </div>
         </footer>
