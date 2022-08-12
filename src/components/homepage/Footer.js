@@ -12,7 +12,7 @@ export default function Footer() {
                         <h2 className="footer-grid-title">Shubham Gupta</h2>
 
                         <div className="footer-timing">
-                            <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <p>A passionate Mobile App Developer 🚀 having an experience of building Web and Mobile applications with Flutter / Android (Kotlin) / React and some other cool libraries and frameworks.</p>
                         </div>
 
                         <div className="footer-timing social-links">

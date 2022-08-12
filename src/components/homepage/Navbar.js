@@ -36,7 +36,7 @@ export default function Navbar({ title, onSignInClicked, onLoading }) {
             <a className="header-item link" data-aos="fade-down" data-aos-delay='50' href="#about">About</a>
             <a className="header-item link" data-aos="fade-down" data-aos-delay='100' href="#services">Skills</a>
             <a className="header-item link" data-aos="fade-down" data-aos-delay='150' href="#testimonials">Testimonials</a>
-            <a className="header-item link" data-aos="fade-down" data-aos-delay='200' href="#footer">Contact Us</a>
+            <a className="header-item link" data-aos="fade-down" data-aos-delay='200' href="#footer">Contact Me</a>
         </div>
         
 
@@ -58,7 +58,7 @@ export default function Navbar({ title, onSignInClicked, onLoading }) {
                 <div className="navbar-section">
                     {navItems}
 
-                    <Link data-aos="fade-down" data-aos-delay='250' to={'/resume'} target="_blank" onClick={onSignInClicked} className="header-item btn">Resume</Link>
+                    <a data-aos="fade-down" data-aos-delay='250' href={'https://github.com/shubham-gupta-16'} target="_blank" onClick={onSignInClicked} className="header-item btn">Resume</a>
                     {navAlwaysCollapsed ? <></> :
                         <div id="menu-btn" onClick={() => {
                             setMenuOpen(!isMenuOpend)
