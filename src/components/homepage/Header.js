@@ -2,7 +2,7 @@ import React from 'react'
 
 import "../../css/header.css";
 import "../../css/button.css";
-import { Link } from 'react-router-dom';
+import content from "../../assets/content.json";
 // import pic from "../../images/me_alpha.png";
 
 export default function Header() {
@@ -11,22 +11,21 @@ export default function Header() {
             <div className="page-container">
                 <div className="header-content">
                     <div className="text-content">
-                        <h1 className="header-title" data-aos="fade-up" data-aos-delay='300'>Hello, I am Shubham Gupta✋</h1>
-                        <p className="header-body" data-aos="fade-up" data-aos-delay='500'>
-                            A passionate Mobile App Developer 🚀 having an experience of building Web and Mobile applications with Flutter / Android (Kotlin) / React and some other cool libraries and frameworks.
-                        </p>
+                        <h1 className="header-title" data-aos="fade-up" data-aos-delay='300'>{content.headerTitle}</h1>
+                        <p className="header-body" data-aos="fade-up" data-aos-delay='500'>{content.headerBody}</p>
                         <div className="footer-timing social-links">
-                            <a target="_blank" href={'https://stackoverflow.com/users/12078109/shubham-gupta'} className="fb" data-aos="fade-up" data-aos-delay='600'> <i className="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a target="_blank" href={'https://github.com/shubham-gupta-16'} className="yt" data-aos="fade-up" data-aos-delay='650'> <i className="fa fa-youtube-play" aria-hidden="true"></i></a>
-                            <a target="_blank" href={'https://www.instagram.com/shubham_g_16/'} className="ig" data-aos="fade-up" data-aos-delay='700'> <i className="fa fa-instagram" aria-hidden="true"></i></a>
-                            <a target="_blank" href={'https://twitter.com/shubham_g16'} className="tw" data-aos="fade-up" data-aos-delay='750'> <i className="fa fa-twitter" aria-hidden="true"></i></a>
+                            {content.socialLinks.map(function (object, i) {
+                                return <a target="_blank" href={object.href} className={object.className} data-aos="fade-up" data-aos-delay={i * 50 + 600}>
+                                    <i className={object.iconClass} aria-hidden="true"></i>
+                                </a>
+                            })}
                         </div>
                         <br />
                         <br />
                         <br />
                         <div>
-                            <a href="#services" data-aos="fade-up" data-aos-delay='900' className="b-btn hard">Mail Me</a>
-                            <a href="#about" data-aos="fade-up" data-aos-delay='1000' style={{ marginLeft: '15px' }} className="b-btn hard inverse">Resume</a>
+                            <a href={content.headerButton1.href} data-aos="fade-up" data-aos-delay='900' className="b-btn hard">{content.headerButton1.text}</a>
+                            <a href={content.headerButton2.href} data-aos="fade-up" data-aos-delay='1000' style={{ marginLeft: '15px' }} className="b-btn hard inverse">{content.headerButton2.text}</a>
                         </div>
                         
                     </div>

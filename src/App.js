@@ -16,7 +16,7 @@ import { SplashScreen } from './components/SplashScreen';
 
 function App() {
   const [isLoading, setLoading] = useState(false)
-  const [isVisible, setVisible] = useState(true)
+  const [isVisible, setVisible] = useState(false)
 
   useEffect(() => {
     Aos.init({
@@ -35,22 +35,25 @@ function App() {
 
   return (
     <>
+
       <SplashScreen visible={isVisible} />
-      {isVisible ? <></> : <BrowserRouter>
-        <Navbar onLoading={setLoading} onSignInClicked={() => { }} />
-        <Routes>
-          <Route exact path='/' element={
-            <>
-              <Header />
-              <About />
-              <Services items={[1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,]} />
-              {/* <Testimonials /> */}
-              {/* <ContactUs /> */}
-            </>
-          } />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      {isVisible
+        ? <></>
+        : <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route exact path='/' element={
+              <>
+                <Header />
+                <About />
+                <Services items={[1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,]} />
+                <Testimonials />
+                <ContactUs />
+              </>
+            } />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
       }
       <Loading visible={isLoading} />
     </>

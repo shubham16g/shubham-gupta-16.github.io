@@ -1,0 +1,34 @@
+{
+    "headerTitle": "Hello, I am Shubham Gupta✋",
+    "headerBody": "A passionate Mobile App Developer 🚀 having an experience of building Web and Mobile applications with Flutter / Android (Kotlin) / React and some other cool libraries and frameworks.",
+    "headerButton1": {
+        "text": "Mail Me",
+        "href": "#about"
+    },
+    "headerButton2": {
+        "text": "Resume",
+        "href": "#about"
+    },
+    "socialLinks": [
+        {
+            "href": "https://stackoverflow.com/users/12078109/shubham-gupta",
+            "className": "fb",
+            "iconClass": "fa fa-facebook"
+        },
+        {
+            "href": "https://github.com/shubham-gupta-16",
+            "className": "yt",
+            "iconClass": "fa fa-youtube-play"
+        },
+        {
+            "href": "https://www.instagram.com/shubham_g_16/",
+            "className": "ig",
+            "iconClass": "fa fa-instagram"
+        },
+        {
+            "href": "https://twitter.com/shubham_g16",
+            "className": "tw",
+            "iconClass": "fa fa-twitter"
+        }
+    ]
+}

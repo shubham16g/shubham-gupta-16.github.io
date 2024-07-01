@@ -3,10 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import '../../css/navbar.css'
 // import { ReactComponent as logo } from '../../assets/s_3.svg'
 
-export default function Navbar({ title, onSignInClicked, onLoading }) {
-
-    
-
+export default function Navbar() {
     var navAlwaysCollapsed = false
 
     let location = useLocation()
@@ -58,7 +55,7 @@ export default function Navbar({ title, onSignInClicked, onLoading }) {
                 <div className="navbar-section">
                     {navItems}
 
-                    <a data-aos="fade-down" data-aos-delay='250' href={'https://github.com/shubham-gupta-16'} target="_blank" onClick={onSignInClicked} className="header-item btn">Resume</a>
+                    <a data-aos="fade-down" data-aos-delay='250' href={'https://github.com/shubham-gupta-16'} target="_blank" className="header-item btn" rel="noopener">Resume</a>
                     {navAlwaysCollapsed ? <></> :
                         <div id="menu-btn" onClick={() => {
                             setMenuOpen(!isMenuOpend)
