@@ -1,4 +1,22 @@
 {
+    "navItems": [
+        {
+            "href": "#about",
+            "text": "About"
+        },
+        {
+            "href": "#experience",
+            "text": "Experience"
+        },
+        {
+            "href": "#projects",
+            "text": "Projects"
+        },
+        {
+            "href": "#footer",
+            "text": "Contact"
+        }
+    ],
     "headerTitle": "Hello, I am Shubham Gupta✋",
     "headerBody": "A passionate Mobile App Developer 🚀 having an experience of building Web and Mobile applications with Flutter / Android (Kotlin) / React and some other cool libraries and frameworks.",
     "headerButton1": {
