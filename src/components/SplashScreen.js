@@ -25,7 +25,7 @@ export const SplashScreen = ({visible}) => {
     const style= {width: 250}
 
     return (
-        <div className={visible ? 'splash-container' : 'splash-container hidden'}>
+        <div className={'splash-container magic' + (visible ? '' : ' hidden')}>
             <header style={{ opacity: 0, height: '100vh', width: '100vw'}}></header>
             <Lottie
                 loop={false}

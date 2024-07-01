@@ -16,7 +16,7 @@ import { SplashScreen } from './components/SplashScreen';
 
 function App() {
   const [isLoading, setLoading] = useState(false)
-  const [isVisible, setVisible] = useState(false)
+  const [isVisible, setVisible] = useState(true)
 
   useEffect(() => {
     Aos.init({

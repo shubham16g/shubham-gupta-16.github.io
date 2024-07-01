@@ -1,7 +1,7 @@
 .about-grid {
     --gap: 100px;
     display: grid;
-    grid-template-columns: calc(50% - var(--gap)/2) calc(50% - var(--gap)/2);
+    grid-template-columns: calc(40% - var(--gap)/2) calc(60% - var(--gap)/2);
     gap: var(--gap);
     padding-bottom: 80px;
     padding-top: 50px;
@@ -9,7 +9,7 @@
 
 .about-grid>.image-container>img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 50% 50% 10px 10px;
     box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.05), 0 3px 10px 0 rgba(0, 0, 0, 0.05);
 }
 
