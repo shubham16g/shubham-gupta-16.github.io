@@ -15,7 +15,7 @@ export default function Header() {
                         <p className="header-body" data-aos="fade-up" data-aos-delay='500'>{content.headerBody}</p>
                         <div className="footer-timing social-links">
                             {content.socialLinks.map(function (object, i) {
-                                return <a target="_blank" href={object.href} className={object.className} data-aos="fade-up" data-aos-delay={i * 50 + 600}>
+                                return <a href={object.href} className={object.className} data-aos="fade-up" data-aos-delay={i * 50 + 600} target='_blank' rel="noopener noreferrer">
                                     <i className={object.iconClass} aria-hidden="true"></i>
                                 </a>
                             })}
@@ -24,8 +24,8 @@ export default function Header() {
                         <br />
                         <br />
                         <div>
-                            <a href={content.headerButton1.href} data-aos="fade-up" data-aos-delay='900' className="b-btn hard">{content.headerButton1.text}</a>
-                            <a href={content.headerButton2.href} data-aos="fade-up" data-aos-delay='1000' style={{ marginLeft: '15px' }} className="b-btn hard inverse">{content.headerButton2.text}</a>
+                            <a href={content.headerButton1.href} target='_blank' rel="noopener noreferrer" data-aos="fade-up" data-aos-delay='900' className="b-btn hard">{content.headerButton1.text}</a>
+                            <a href={content.headerButton2.href} target='_blank' rel="noopener noreferrer" data-aos="fade-up" data-aos-delay='1000' style={{ marginLeft: '15px' }} className="b-btn hard inverse">{content.headerButton2.text}</a>
                         </div>
                         
                     </div>

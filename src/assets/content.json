@@ -1,12 +1,12 @@
 {
     "navItems": [
         {
-            "href": "#about",
-            "text": "About"
+            "href": "#home",
+            "text": "Home"
         },
         {
-            "href": "#experience",
-            "text": "Experience"
+            "href": "#about",
+            "text": "About"
         },
         {
             "href": "#projects",
@@ -21,11 +21,11 @@
     "headerBody": "A passionate Mobile App Developer 🚀 having an experience of building Web and Mobile applications with Flutter / Android (Kotlin) / React and some other cool libraries and frameworks.",
     "headerButton1": {
         "text": "Mail Me",
-        "href": "#about"
+        "href": "mailto:shubham.developer16@gmail.com"
     },
     "headerButton2": {
         "text": "Resume",
-        "href": "#about"
+        "href": "https://github.com/shubham-gupta-16"
     },
     "socialLinks": [
         {

@@ -1,6 +1,25 @@
 header {
     background-image: url("../images/bg.png");
     background-color: #efefef;
+    position: relative;
+}
+
+header::after {
+    visibility: hidden;
+    content: "";
+    background: url('../assets/svg/magic.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6;
+    filter: blur(50px) saturate(3) ;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: 0;
+    z-index: 1;
+
 }
 
 .header-content {
