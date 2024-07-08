@@ -4,6 +4,33 @@ header {
     position: relative;
 }
 
+.fa-brands {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    color: white;
+    filter: invert(1);
+}
+
+i.facebook {
+    background-image: url("../assets/svg/ic_facebook.svg");
+}
+i.instagram {
+    background-image: url("../assets/svg/ic_instagram.svg");
+}
+i.github {
+    background-image: url("../assets/svg/ic_github.svg");
+}
+i.linkedin {
+    background-image: url("../assets/svg/ic_linkedin.svg");
+}
+i.stackoverflow {
+    background-image: url("../assets/svg/ic_stackoverflow.svg");
+}
+
+
 
 
 .header-content {

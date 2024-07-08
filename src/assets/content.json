@@ -27,26 +27,31 @@
         "text": "Resume",
         "href": "https://github.com/shubham-gupta-16"
     },
+    "dump": {
+        "href": "https://stackoverflow.com/users/12078109/shubham-gupta",
+        "className": "fb",
+        "iconClass": "fa-brands facebook"
+    },
     "socialLinks": [
-        {
-            "href": "https://stackoverflow.com/users/12078109/shubham-gupta",
-            "className": "fb",
-            "iconClass": "fa fa-facebook"
-        },
         {
             "href": "https://github.com/shubham-gupta-16",
             "className": "yt",
-            "iconClass": "fa fa-youtube-play"
+            "iconClass": "fa-brands github"
+        },
+        {
+            "href": "https://www.linkedin.com/in/shubham-g16",
+            "className": "tw",
+            "iconClass": "fa-brands linkedin"
+        },
+        {
+            "href": "https://stackoverflow.com/users/12078109/shubham-gupta",
+            "className": "so",
+            "iconClass": "fa-brands stackoverflow"
         },
         {
             "href": "https://www.instagram.com/shubham_g_16/",
             "className": "ig",
-            "iconClass": "fa fa-instagram"
-        },
-        {
-            "href": "https://twitter.com/shubham_g16",
-            "className": "tw",
-            "iconClass": "fa fa-twitter"
+            "iconClass": "fa-brands instagram"
         }
     ]
 }
